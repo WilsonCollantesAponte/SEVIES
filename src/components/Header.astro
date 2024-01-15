@@ -2,18 +2,21 @@
 import HeaderLink from './HeaderLink.astro';
 // import { SITE_TITLE } from '../consts';
 import mainImage from "../../public/blog-placeholder-1.jpg";
----
+const { pathname } = Astro.url;
 
+console.log(pathname);
+
+---
 <header>
 	<nav>
 		<!-- <h2><a href="/">{SITE_TITLE}</a></h2> -->
 		<h2><a href="/">
 				<img src={mainImage.src} alt="SEVIES" width="60">	
 		</a></h2>
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
+		<div>
+			<HeaderLink class='text-xl' href="/"><h6>Inicio</h6></HeaderLink>
+			<HeaderLink class='text-xl' href="/blog">Noticias</HeaderLink>
+			<HeaderLink class='text-xl' href="/about">Nosotros</HeaderLink>
 		</div>
 		<div class="social-links">
 			<a href="https://m.webtoo.ls/@astro" target="_blank">
