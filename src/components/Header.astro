@@ -1,11 +1,15 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+// import { SITE_TITLE } from '../consts';
+import mainImage from "../../public/blog-placeholder-1.jpg";
 ---
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<!-- <h2><a href="/">{SITE_TITLE}</a></h2> -->
+		<h2><a href="/">
+				<img src={mainImage.src} alt="SEVIES" width="60">	
+		</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
