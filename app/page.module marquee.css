@@ -1,0 +1,13 @@
+.move {
+  white-space: nowrap;
+  animation: id_1 5s linear infinite;
+}
+
+@keyframes id_1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
