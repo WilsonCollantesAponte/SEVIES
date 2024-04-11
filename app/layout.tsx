@@ -8,7 +8,7 @@ import Footer from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SEVIES my best word no my best no work yes",
+  title: "SEVIES",
   description: "%s - Asociación sembradores de vida y esperanza",
 };
 
