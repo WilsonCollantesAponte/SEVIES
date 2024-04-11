@@ -13,6 +13,7 @@ import HomeSVG from "@/public/homeSVG";
 import CategoriesSVG from "@/public/categoriesSVG";
 import Headroom from "react-headroom";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 function Navbar() {
   const [show, setShow] = useState<boolean>(false);
@@ -48,7 +49,13 @@ function Navbar() {
           <div className="flex items-center py-1.5 font-medium text-xs mb-1.5 shadow-md">
             <Link href="/">
               <div className="overflow-hidden rounded flex justify-center items-center">
-                <img className="w-24 object-cover" src="/main.jpg" alt="" />
+                <Image
+                  className="w-24 object-cover"
+                  src="/main.jpg"
+                  width={9999}
+                  height={9999}
+                  alt=""
+                />
               </div>
             </Link>
 
@@ -138,9 +145,11 @@ function Navbar() {
                               className="flex items-center p-2 rounded-lg"
                             >
                               {/* Avatar */}
-                              <img
+                              <Image
                                 className="object-cover size-11 rounded"
-                                src="./main.jpg"
+                                src="/main.jpg"
+                                width={9999}
+                                height={9999}
                                 alt=""
                               />
                               {/* Avatar */}

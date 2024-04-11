@@ -1,7 +1,15 @@
+import Image from "next/image";
+
 function page() {
   return (
     <main className="inset-0 flex flex-col w-[90%] text-pretty tracking-widest md:w-1/2 my-10 md:my-24 mx-auto gap-10 leading-8">
-      <img className="w-1/2 md:w-1/3 mx-auto " src="/main.jpg" alt="" />
+      <Image
+        className="w-1/2 md:w-1/3 mx-auto "
+        src="/main.jpg"
+        width={9999}
+        height={9999}
+        alt=""
+      />
 
       <p className="text-gray-600 text-xl font-semibold">Jun 5, 2024</p>
 
