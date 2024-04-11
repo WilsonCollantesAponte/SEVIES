@@ -186,7 +186,7 @@ function Navbar() {
                             href="/we"
                             className="flex items-center gap-1 hover:cursor-pointer p-2"
                           >
-                            <CategoriesSVG /> Categorías
+                            <CategoriesSVG /> Nosotros
                           </Link>
 
                           {/* <Link
